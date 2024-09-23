@@ -130,16 +130,12 @@ article:hover {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: var(--color03);
     color: var(--color01);
     height: 3rem;
-}
-
-footer:hover{
-    opacity: 15%;
+    text-align: center;
+    align-content: center;
 }
 
 
