@@ -41,6 +41,10 @@ nav {
     z-index: 100;
 }
 
+nav i{
+    font-size: 2rem;
+}
+
 nav img {
     height: 4rem;
 
@@ -72,6 +76,7 @@ nav a {
 .menu-responsivo {
     font-size: 2rem;
     display: none;
+    position: relative;
 }
 
 article {
@@ -143,6 +148,43 @@ footer {
     align-content: center;
 }
 
+.menu-responsivo input {
+    /* display: none; */
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color04);
+    min-width: 10rem;
+    z-index: 10;
+    text-align: center;
+}
+
+.menu-content a {
+    color: var(--color01);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    display: block;
+
+}
+
+.menu-content a:hover {
+    background-color: var(--color03);
+    color: var(--color01);
+}
+
+#menu-toggle:checked + .menu-button + .menu-content {
+    display: block;
+}
+
 /* Media Queries */
 
 /* XS extra small : smartphone portrait */
@@ -156,6 +198,11 @@ footer {
     }
 
     .menu-responsivo {
+        display: block;
+    }
+
+    .menu-responsivo:hover .dropdown-menu{
+        padding: 0.625rem;
         display: block;
     }
 
