@@ -70,6 +70,7 @@ nav a {
 .menu a:hover {
     background-color: var(--color01);
     color: var(--color03);
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -149,8 +150,8 @@ footer {
 }
 
 .menu-responsivo input {
-    /* display: none; */
-}
+    opacity: 0;
+} 
 
 .menu-button {
     cursor: pointer;
@@ -161,24 +162,31 @@ footer {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--color04);
+    background-color: var(--color01);
     min-width: 10rem;
     z-index: 10;
+    border-radius: 0.5rem;
     text-align: center;
 }
 
+.menu-content ul {
+    /* display: flex;
+    flex-direction: column; */
+    display: block;
+}
+
 .menu-content a {
-    color: var(--color01);
+    color: var(--color04);
     font-size: 1rem;
     font-weight: 700;
     padding: 1rem;
     display: block;
-
 }
 
 .menu-content a:hover {
     background-color: var(--color03);
     color: var(--color01);
+    border-radius: 0.5rem;
 }
 
 #menu-toggle:checked + .menu-button + .menu-content {
